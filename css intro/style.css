@@ -1,0 +1,165 @@
+/* css box modal */
+
+/* #header{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border:10px solid black;
+    padding: 20px;
+    margin:20px;
+    box-sizing: border-box;
+} */
+
+@keyframes spin {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+h1{
+    width: 200px;
+    background-color: yellow;
+    margin: 30px auto;
+    height: 200px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+input{
+    display:block;
+    width: 100%;
+    margin:10px 0px;
+}
+
+form{
+    width: 50%;
+    border: 1px solid black;
+    margin:20px auto;
+    padding: 10px;
+    background: url('https://t4.ftcdn.net/jpg/00/90/76/59/360_F_90765953_xgLAsm6N7VZD1zMlO9CA8t7qwBpZ4lSr.jpg');
+    background-size: cover;
+    border-radius: 20px;
+    background-attachment: fixed;
+    animation-name: spin;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* type of css */
+/* inline css , internal css, external css*/ 
+
+/* selectors in css */
+
+/* id selector > #idname */
+/* class selector .classname */
+/* * universal selector */
+
+/* *{
+    border:1px solid green;
+    background-color: yellow;
+    margin:5px;
+} */
+
+/* #header{
+    background-color: red;
+}
+
+h1{
+    background-color: aqua;
+}
+
+.asim{
+    background-color: blue;
+
+} */
+
+/* combinators */
+
+
+/* div{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+#box>p{
+    background-color: darkgreen;
+}
+
+/* psudo classes */
+
+a{
+    text-decoration: none;
+}
+a:link{
+    color:cyan;
+}
+a:visited{
+    color:yellow;
+    text-decoration: none;
+
+} */
+
+
+/* a:active{
+    background-color: black;
+    color:white;
+}
+
+a:hover,button:hover{
+    text-shadow:10px 20px 3px black;
+}
+
+button:focus{
+    background-color: darkslategray;
+}
+
+button:active{
+    background-color: red;
+} */
+
+
+/* psudo elements */
+
+/* p::first-line{
+    background-color: chartreuse;   
+}
+
+p::first-letter{
+    background-color: chartreuse;   
+}
+
+p::selection{
+    background-color: coral;   
+}
+
+p::after{
+  content: "@ ";
+} */
