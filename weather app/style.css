@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    text-align: center;
+    background:purple;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    padding: 20px;
+}
+
+input,button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius:10px;
+}
+
+input{
+    box-shadow: 0px 0px 10px black;
+}
+button{
+    background-color: green;
+}
+
+#flexbox{
+    display: grid;
+    grid-template-columns: auto 100px;
+    padding: 10px;
+    gap: 10px;
+}

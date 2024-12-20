@@ -27,16 +27,16 @@
 // });
 
 
-let data = fetch('https://jsonplaceholder.typicode.com/users');
+// let data = fetch('https://jsonplaceholder.typicode.com/users');
 
 
-data
-.then(function(res){
-    return res.json();
-})
-.then(function(res){
-    console.log(res);
-})
+// data
+// .then(function(res){
+//     return res.json();
+// })
+// .then(function(res){
+//     console.log(res);
+// })
 
 
 
