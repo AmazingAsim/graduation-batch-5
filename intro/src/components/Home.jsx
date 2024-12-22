@@ -2,8 +2,8 @@ export default function Home(props){
     return(
       <div>
         <h1>hello Home</h1>
-         <h2>{props.u.name}</h2>
-         <h2>{props.u.age}</h2>
+        <h1>count : {props.count}</h1>
+        <button onClick={props.increaseCount}>increase count</button>
       </div>
     )
   }
