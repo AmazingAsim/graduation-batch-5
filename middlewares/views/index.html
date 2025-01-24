@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>server</h1>
+    <form action="/users/signup" method="POST">
+        <input type="text" name="user[name]">
+        <input type="email" name="user[email]">
+        <input type="password" name="user[password]">
+        <h3>Hobbies</h3>
+        <input type="checkbox" name="user[hobbies][]" value="cricket">cricket
+        <input type="checkbox" name="user[hobbies][]" value="football">football
+        <button type="submit">signup</button>
+    </form>
+
+    <form action="/users/profile" method="POST" 
+    enctype="multipart/form-data">
+        <input type="file" name="profile">
+        <button type="submit">upload</button>
+    </form>
+
+    <button onclick="postJsonData()">submit json data</button>
+</body>
+</html>

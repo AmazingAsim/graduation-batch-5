@@ -1,4 +1,41 @@
+import dotenv from 'dotenv';
+dotenv.config();
+import express from 'express';
+import chalk from 'chalk';
+import fs from 'fs';
+const app = express();
+const port  = process.env.PORT || 8080;
 
+app.use(express.static('./views'));
+
+// app.get('/',function(req,res){
+//     res.status(200).send('<h1>Welcome to the server</h1>')
+// })
+
+
+app.get('/search/:query',function(req,res){
+    let query = req.params.query;
+    fs.appendFile('./query.txt',`Query: ${query} \n`,function(error){
+        if(error){throw new Error(error)}
+        console.log(chalk.green('file updated'));
+        res.status(200).send(`Your serched query is:  ${query}`);
+    })
+})
+
+
+app.get('*',function(req,res){
+    res.status(404).send('<h1 style="color:red;text-align:center">404 page not found</h1>')
+})
+
+app.post('/',function(req,res){
+    res.status(200).send('<h1>post request</h1>')
+})
+
+
+app.listen(port,function(error){
+    if(error){throw new Error(error)}
+    console.log(chalk.green(`server is running on port ${port}`));
+})
 
 
 
