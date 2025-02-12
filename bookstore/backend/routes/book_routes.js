@@ -6,5 +6,5 @@ let path = require('path');
 router.get('/', bookController.getBooks);
 router.post('/addBook',uploads.single('image'), bookController.postBooks);
 router.get('/getimage/:filename',bookController.getImage);
-
+router.get('/getbooksbyname/:name',bookController.getBooksByName);
 module.exports = router;

@@ -21,5 +21,11 @@ async function getImage(req,res){
     res.sendFile(filename,{root:'./uploads'});
 }
 
+async function getBooksByName(req,res){
+   let name = req.params.name;
+   let books = await bookModel.find({name:{$regex:name,$options:'i'}});
+   res.status(200).send(books);
+}
 
-module.exports = {postBooks,getBooks,getImage};
+
+module.exports = {postBooks,getBooks,getImage,getBooksByName};
