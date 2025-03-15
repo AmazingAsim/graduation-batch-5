@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+    },
+    "files": [
+        "index.ts"],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": ["**.*ts"]
+}
